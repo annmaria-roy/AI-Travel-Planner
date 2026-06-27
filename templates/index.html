@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Travel Planner</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <h2>✈ Travel AI</h2>
+
+        <button id="newChatBtn" onclick="newChat()">
+    + New Chat
+</button>
+
+        <div class="sidebar-footer">
+
+            <p>AI Travel Planner</p>
+           
+        </div>
+
+    </aside>
+
+    <!-- Main -->
+
+    <main class="main">
+
+        <!-- Header -->
+
+        <header class="header">
+
+            <h1>AI Travel Planner</h1>
+
+            <p>
+                Ask anything about your next trip.
+            </p>
+
+        </header>
+
+        <!-- Chat -->
+
+        <section id="chatArea" class="chat-area">
+
+            <div class="bot-message">
+
+                <div class="message">
+
+                    👋 Hello!
+
+                    <br><br>
+
+                    I can help you plan trips anywhere in the world.
+
+                   
+
+                    
+
+
+                   
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Input -->
+
+        <footer class="input-area">
+
+            <textarea
+                id="destination"
+                placeholder="Ask about your trip..."
+            ></textarea>
+
+            <button onclick="generateTrip()">
+                Send
+            </button>
+
+        </footer>
+
+    </main>
+
+</div>
+
+<script src="/static/script.js"></script>
+
+</body>
+
+</html>
